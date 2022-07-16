@@ -36,3 +36,15 @@ document.querySelector(".check").addEventListener("click", () => {
     }
   }
 });
+
+document.querySelector(".again").addEventListener("click", () => {
+  score = 20;
+  randomNumber = Math.trunc(Math.random() * 20) + 1;
+  secretNumber = document.querySelector(".number").value = randomNumber;
+  document.querySelector(".score").innerHTML = 20;
+  document.querySelector(".message").innerHTML = "Start guessing...";
+  document.querySelector(".guess").value = "";
+  document.querySelector("body").style.backgroundColor = "#222";
+  document.querySelector(".number").innerHTML = "?";
+  document.querySelector(".number").style.width = "15rem";
+});
