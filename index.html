@@ -10,19 +10,21 @@
   <body>
     <header>
       <h1>Guess my number!</h1>
-      <p>(between 1 and 20)</p>
-      <button>Again!</button>
-      <div>?</div>
+      <p class="between">(between 1 and 20)</p>
+      <button class="btn again">Again!</button>
+      <div class="number">?</div>
     </header>
     <main>
-      <section>
-        <input type="number" />
-        <button>Check!</button>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
       </section>
-      <section>
-        <p>Start guessing...</p>
-        <p>Score: <span>20</span></p>
-        <p>HighScore: <span>0</span></p>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          HighScore: <span class="highscore">0</span>
+        </p>
       </section>
     </main>
     <script src="script.js"></script>
