@@ -25,27 +25,14 @@ header {
   position: relative;
   height: 50vh;
   border-bottom: 7px solid #eee;
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    height: 100vh;
-    justify-content: center;
-  }
 }
 
 main {
   height: 70vh;
   color: #eee;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  @media screen and (max-width: 600px) {
-    text-align: center;
-    gap: 2rem;
-    height: 100vh;
-  }
 }
 
 .left {
@@ -69,9 +56,6 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @media screen and (max-width: 750px) {
-    top: 20%;
-  }
 }
 
 .number {
@@ -85,9 +69,6 @@ h1 {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
-  @media screen and (max-width: 750px) {
-    margin-bottom: 2rem;
-  }
 }
 
 .between {
@@ -95,18 +76,12 @@ h1 {
   position: absolute;
   top: 4rem;
   right: 2rem;
-  @media screen and (max-width: 750px) {
-    position: static;
-  }
 }
 
 .again {
   position: absolute;
   top: 2rem;
   left: 2rem;
-  @media screen and (max-width: 750px) {
-    position: static;
-  }
 }
 
 .guess {
@@ -120,9 +95,6 @@ h1 {
   text-align: center;
   display: block;
   margin-bottom: 3rem;
-  @media screen and (max-width: 600px) {
-    width: 80%;
-  }
 }
 
 .btn {
@@ -169,4 +141,38 @@ footer > section {
 
 img {
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .guess {
+    font-size: 3rem;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    justify-content: center;
+  }
+  main {
+    text-align: center;
+    gap: 2rem;
+    height: 100vh;
+    flex-wrap: wrap;
+  }
+  h1 {
+    top: 20%;
+  }
+  .number {
+    margin-bottom: 2rem;
+  }
+  .between {
+    position: static;
+  }
+  .again {
+    position: static;
+  }
+  .guess {
+    width: 80%;
+  }
 }
