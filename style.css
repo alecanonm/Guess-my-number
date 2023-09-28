@@ -87,7 +87,6 @@ h1 {
   transform: translate(-50%, 50%);
   @media screen and (max-width: 600px) {
     margin-bottom: 2rem;
-    bottom: 10%;
   }
 }
 
